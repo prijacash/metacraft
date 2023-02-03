@@ -7,11 +7,17 @@ contract FunctionsLab {
     uint a;
     uint b;
 
-    function sumFunction(uint _a, uint _b) public returns(uint c) {
+    constructor(uint _a, uint _b){
         a = _a;
         b = _b;
+    }
 
-        uint c = a + b;
-        
+    function sumFunction() private view returns(uint c) {
+        return a+b;
+    }
+
+    function anotherFunction() external returns(uint) {
+        uint d = sumFunction();
+        return d;
     }
 }
