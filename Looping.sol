@@ -25,6 +25,6 @@ contract Loop {
 
         do {
             j = j + 2;
-        } while (j < 10);
+        } while (j < 20);
     }
 }
