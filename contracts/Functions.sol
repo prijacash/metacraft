@@ -16,7 +16,7 @@ contract FunctionsLab {
         return a+b;
     }
 
-    function anotherFunction() external returns(uint) {
+    function anotherFunction() internal view returns(uint) {
         uint d = sumFunction();
         return d;
     }
